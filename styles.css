@@ -30,6 +30,7 @@ button {
     top: 0%;
     left: 0%;
     right: 0%;
+    background-color: #fffbf7;
 }
 
 .header{
@@ -40,10 +41,6 @@ button {
 
 .header li{
     display: inline;
-}
-
-.header ul{
-    padding: 0%;
 }
 
 .header > *{
@@ -64,6 +61,10 @@ button {
     text-align: center;
     color: #025157;
     font-weight:  500;
+}
+
+.navbar li{
+    padding: 20px; 
 }
 
 .header .actions {
@@ -114,7 +115,6 @@ align-items: center;
 .explanatory-video img{
     width: 120px;
     margin-top: 10px;
-   
 }
 
 .publish {
@@ -135,16 +135,12 @@ flex:  1;
     color: #343434;
 }
 
-.publish .texto-gris-publish {
-
-}
-
 .publish .signup-form input {
     border: 1px solid #b6b6b6;
     padding: 6px 20px;
     width: 60%;
     max-width: 250px;
-    height: 75%;
+    height: 50%;
     border-radius: 8px;
 }
 
@@ -158,10 +154,96 @@ flex:  1;
     border-bottom-right-radius: 8px;
     padding: 6px 20px;
     margin-left: -10px;
-    height: 100%;
+    height: 50px;
 }
 
 .publish .signup-form {
     height: 55px;
 }
 
+.features {
+    height: 660px;
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    padding: 5% 10%;
+    gap: 30px;
+    background-color: #025157;
+}
+
+.feature-card{
+    margin: 0 15px 30px;
+    border-radius:  5px;
+    background: #ffffff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.feature-content{
+    padding: 30px 20px 40px 40px;
+    flex: 2;
+}
+
+.feature-image{
+    flex: 1;
+}
+
+@media  (max-width: 425px) {
+    .navbar,
+    .actions{
+        display: none;
+    }
+
+    .main {
+        margin-top: 130px;
+    }
+
+ .main h1 {
+     font-size: 30px;
+
+    }
+
+    .main .imagen-propiedades {
+        width: 100%;
+    }
+
+    .promo{
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .explanatory-video > video {
+        width: 100%;
+    }
+
+    .publish {
+        width:  100%;
+    }
+
+    .publish > h3  {
+        font-size:  20px;
+    }
+
+    .publish .signup-form imput {
+        width: 50%;
+    }
+
+    .features {
+        grid-template: repeat(4, 1fr) / 1fr;
+        padding-left: 0%;
+        padding-right: 0%;
+        height: 1320px;
+    }
+
+    .feature-image {
+        display: none;
+    }
+
+
+
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+
+}
